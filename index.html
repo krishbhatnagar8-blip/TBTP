@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(rgba(255,245,247,0.96), rgba(255,235,240,0.96));
+      color: #442b33;
+      line-height: 1.8;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 10vw, 6rem);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.8;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #9d5366;
+      padding: 14px 28px;
+      border-radius: 30px;
+      transition: 0.3s;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #7e4050;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .letter {
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+      font-size: 1.1rem;
+    }
+
+    .letter p {
+      margin-bottom: 22px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      transition: 0.3s;
+      background: #f4dfe5;
+    }
+
+    .photos img:hover {
+      transform: scale(1.03) rotate(-1deg);
+    }
+
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .reason {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    }
+
+    .reason span {
+      font-size: 2rem;
+    }
+
+    .secret {
+      text-align: center;
+    }
+
+    #secretMessage {
+      display: none;
+      max-width: 600px;
+      margin: 30px auto 0;
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .ending {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .ending h2 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+    }
+
+    .heart {
+      font-size: 4rem;
+      animation: heartbeat 1.3s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .note {
+      text-align: center;
+      opacity: 0.65;
+      margin-top: 18px;
+      font-size: 0.95rem;
+    }
+
+    @media(max-width: 600px) {
+      section {
+        padding: 70px 18px;
+      }
+
+      .letter {
+        padding: 30px 22px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="heart">❤️</div>
+      <h1>Happy Birthday</h1>
+      <p>I made something for you.</p>
+      <a href="#letter" class="button">Open Your Letter</a>
+    </div>
+  </section>
+
+  <section id="letter">
+    <div class="container fade-in">
+      <h2>To My Favorite Person</h2>
+
+      <div class="letter">
+        <p>Happy birthday baby ❤️</p>
+
+        <p>
+          I wanted to make you something a little different this year.
+        </p>
+
+        <p>
+          Something you could open whenever you wanted, and something that would always be here to remind you how much you mean to me.
+        </p>
+
+        <p>
+          Replace this section with your real letter.
+        </p>
+
+        <p>
+          You can write about how you met, your favorite memories, the things you admire about her, and everything you're looking forward to together.
+        </p>
+
+        <p>I love you. ❤️</p>
+
+        <p>— YOUR NAME</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container fade-in">
+      <h2>Some of My Favorite Memories</h2>
+
+      <div class="photos">
+        <img src="photo1.jpg" alt="Memory 1">
+        <img src="photo2.jpg" alt="Memory 2">
+        <img src="photo3.jpg" alt="Memory 3">
+      </div>
+
+      <p class="note">
+        Add photo1.jpg, photo2.jpg, and photo3.jpg to the same folder as this file.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container fade-in">
+      <h2>Things I Love About You</h2>
+
+      <div class="reasons">
+        <div class="reason">
+          <span>❤️</span>
+          <p>The way you make me laugh.</p>
+        </div>
+
+        <div class="reason">
+          <span>🥰</span>
+          <p>The way you care about the people you love.</p>
+        </div>
+
+        <div class="reason">
+          <span>✨</span>
+          <p>The person you are when nobody is watching.</p>
+        </div>
+
+        <div class="reason">
+          <span>🏡</span>
+          <p>Somehow you make anywhere feel like home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secret">
+    <div class="container fade-in">
+      <h2>One More Thing...</h2>
+
+      <button class="button" onclick="showSecret()">
+        Click Me ❤️
+      </button>
+
+      <div id="secretMessage">
+        If I had to do everything all over again, I'd still choose you.
+        <br><br>
+        Happy Birthday baby. ❤️
+      </div>
+    </div>
+  </section>
+
+  <section class="ending">
+    <div class="fade-in">
+      <div class="heart">❤️</div>
+
+      <h2>
+        Happy Birthday,<br>
+        [HER NAME]
+      </h2>
+
+      <p>Here's to another year of us.</p>
+    </div>
+  </section>
+
+  <script>
+    function showSecret() {
+      document.getElementById("secretMessage").style.display = "block";
+    }
+
+    const items = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+
+    items.forEach(item => observer.observe(item));
+  </script>
+
+</body>
+</html>
